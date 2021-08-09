@@ -38,7 +38,7 @@ public class StepDefinitions {
 
 	public StepDefinitions(TestContext context) {
 		LOG.info("StepDefinitions constructor");
-		testContext = context;
+		this.testContext = context;
 	}
 
 	@Given("the user acesses the homepage of the marketplace")
