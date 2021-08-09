@@ -1,0 +1,362 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-09T17:05:16.746Z",
+        "line": 5,
+        "name": "Selects two type of laptops, adds to cart, deletes one, finishes purchase",
+        "description": "",
+        "id": "tests-cases-where-user-selects-different-kinds-of-products--adds-to-cart-and-purchases-it;selects-two-type-of-laptops--adds-to-cart--deletes-one--finishes-purchase",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13075224000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user acesses the homepage of the marketplace",
+            "match": {
+              "location": "steps.StepDefinitions.the_user_acesses_the_homepage_of_the_marketplace()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2497272000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user selects a product category \"laptops\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"laptops\"",
+                  "offset": 32
+                }
+              ],
+              "location": "steps.StepDefinitions.user_selects_a_product_category(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3248037000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "selects the product \"Sony vaio i5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sony vaio i5\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.StepDefinitions.selects_the_product(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1973775000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "adds the product to cart, accepts the pop-up confirmation",
+            "match": {
+              "location": "steps.StepDefinitions.adds_the_product_to_cart_accepts_the_pop_up_confirmation()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1376798000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user goes back to the main page of the marketplace",
+            "match": {
+              "location": "steps.StepDefinitions.user_goes_back_to_the_main_page_of_the_marketplace()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1203677000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user selects a product category \"laptops\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"laptops\"",
+                  "offset": 32
+                }
+              ],
+              "location": "steps.StepDefinitions.user_selects_a_product_category(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1387989000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "selects the product \"Dell i7 8gb\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dell i7 8gb\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.StepDefinitions.selects_the_product(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1783567000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "adds the product to cart, accepts the pop-up confirmation",
+            "match": {
+              "location": "steps.StepDefinitions.adds_the_product_to_cart_accepts_the_pop_up_confirmation()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1130558000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user navigates to the cart page",
+            "match": {
+              "location": "steps.StepDefinitions.user_navigates_to_the_cart_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11970086000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "deletes a product \"Dell i7 8gb\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dell i7 8gb\"",
+                  "offset": 18
+                }
+              ],
+              "location": "steps.StepDefinitions.deletes_a_product(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 512937000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "clicks on placing the order",
+            "match": {
+              "location": "steps.StepDefinitions.clicks_on_placing_the_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1503214000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "fills the field \"name\" with the value \"Joana\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"name\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Joana\"",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.StepDefinitions.fills_the_field_with_the_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 696615000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "fills the field \"country\" with the value \"Portugal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"country\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Portugal\"",
+                  "offset": 41
+                }
+              ],
+              "location": "steps.StepDefinitions.fills_the_field_with_the_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 566549000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "fills the field \"city\" with the value \"Lisbon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"city\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Lisbon\"",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.StepDefinitions.fills_the_field_with_the_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 574748000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "fills the field \"credit card\" with the value \"444499191919\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"credit card\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"444499191919\"",
+                  "offset": 45
+                }
+              ],
+              "location": "steps.StepDefinitions.fills_the_field_with_the_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 596574000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "fills the field \"month\" with the value \"August\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"month\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"August\"",
+                  "offset": 39
+                }
+              ],
+              "location": "steps.StepDefinitions.fills_the_field_with_the_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 330053000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "fills the field \"year\" with the value \"2021\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"year\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"2021\"",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.StepDefinitions.fills_the_field_with_the_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1222331000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user finishes the purchase",
+            "match": {
+              "location": "steps.StepDefinitions.user_finishes_the_purchase()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 477758000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user verifies the information of the purchase",
+            "match": {
+              "location": "steps.StepDefinitions.user_verifies_the_information_of_the_purchase()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2455947000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user closes the confirmation box",
+            "match": {
+              "location": "steps.StepDefinitions.user_closes_the_confirmation_box()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@happy-path"
+          },
+          {
+            "name": "@scenario-01"
+          }
+        ]
+      }
+    ],
+    "name": "Tests cases where user selects different kinds of products, adds to cart and purchases it",
+    "description": "",
+    "id": "tests-cases-where-user-selects-different-kinds-of-products--adds-to-cart-and-purchases-it",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/scenario.feature",
+    "tags": []
+  }
+]

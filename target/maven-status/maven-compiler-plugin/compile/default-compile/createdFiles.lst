@@ -1,0 +1,12 @@
+framework/ConfigurationFileReader.class
+framework/TestContext.class
+framework/FileReaderManager.class
+framework/Wait.class
+framework/Hooks.class
+pageObjects/CartPage.class
+pageObjects/Homepage.class
+pageObjects/ProductPage.class
+pageObjects/TestInputs.class
+framework/WebDriverFactory.class
+framework/PageObjectsManager.class
+framework/Screenshot.class

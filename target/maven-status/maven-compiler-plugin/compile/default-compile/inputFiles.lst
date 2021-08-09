@@ -1,0 +1,12 @@
+/home/jpedroso/eclipse-workspace/testing-framework/src/main/java/framework/Screenshot.java
+/home/jpedroso/eclipse-workspace/testing-framework/src/main/java/pageObjects/Homepage.java
+/home/jpedroso/eclipse-workspace/testing-framework/src/main/java/framework/PageObjectsManager.java
+/home/jpedroso/eclipse-workspace/testing-framework/src/main/java/pageObjects/ProductPage.java
+/home/jpedroso/eclipse-workspace/testing-framework/src/main/java/framework/ConfigurationFileReader.java
+/home/jpedroso/eclipse-workspace/testing-framework/src/main/java/framework/TestContext.java
+/home/jpedroso/eclipse-workspace/testing-framework/src/main/java/framework/Hooks.java
+/home/jpedroso/eclipse-workspace/testing-framework/src/main/java/framework/FileReaderManager.java
+/home/jpedroso/eclipse-workspace/testing-framework/src/main/java/framework/Wait.java
+/home/jpedroso/eclipse-workspace/testing-framework/src/main/java/framework/WebDriverFactory.java
+/home/jpedroso/eclipse-workspace/testing-framework/src/main/java/pageObjects/CartPage.java
+/home/jpedroso/eclipse-workspace/testing-framework/src/main/java/pageObjects/TestInputs.java
