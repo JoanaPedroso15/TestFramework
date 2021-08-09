@@ -1,67 +1,159 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="testRunners.TestRunner" time="50.095" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="testRunners.TestRunner" time="133.972" errors="2" skipped="0">
   <properties>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="java.vm.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="user.country.format" value="PT"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/jpedroso/eclipse-workspace/testing-framework"/>
-    <property name="java.vm.vendor" value="Ubuntu"/>
-    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.6+8-LTS"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.6\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\jpedroso\Desktop\Eclipse\testing-framework"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="path.separator" value=":"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/jpedroso/eclipse-workspace/testing-framework"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
-    <property name="java.runtime.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="user.dir" value="C:\Users\jpedroso\Desktop\Eclipse\testing-framework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.6+8-LTS"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.io.tmpdir" value="C:\Users\jpedroso\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
-    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.8.1\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-11.0.6\bin;C:\Program Files\nodejs\;C:\Program Files\Portugal Identity Card\;C:\Program Files\apache-maven-3.8.1\bin;C:\Program Files\Git\cmd;C:\Users\jpedroso\AppData\Local\Microsoft\WindowsApps;C:\Users\jpedroso\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jpedroso\AppData\Roaming\npm;C:\Users\jpedroso\AppData\Local\GitHubDesktop\bin;;."/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.8.1\bin\../conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="55.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="5.8.0-50-generic"/>
-    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
-    <property name="user.home" value="/home/jpedroso"/>
-    <property name="user.timezone" value="Europe/Lisbon"/>
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.8.1\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\jpedroso"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="Cp1252"/>
     <property name="java.specification.version" value="11"/>
     <property name="user.name" value="jpedroso"/>
-    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.8.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
-    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.6"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language.format" value="pt"/>
-    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="11.0.11"/>
-    <property name="securerandom.source" value="file:/dev/./urandom"/>
-    <property name="java.vendor" value="Ubuntu"/>
-    <property name="maven.home" value="/usr/share/maven"/>
-    <property name="file.separator" value="/"/>
-    <property name="java.version.date" value="2021-04-20"/>
-    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="java.version" value="11.0.6"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.8.1\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2020-01-14"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.desktop" value="gnome"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Tests cases where user selects different kinds of products, adds to cart and purchases it" name="Selects two type of laptops, adds to cart, deletes one, finishes purchase" time="50.095"/>
+  <testcase classname="Tests cases where user selects different kinds of products, adds to cart and purchases it" name="Selects two type of laptops, adds to cart, deletes one, finishes purchase" time="66.975">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at framework.Screenshot.getScreenshot(Screenshot.java:53)
+	at steps.StepDefinitions.user_verifies_the_information_of_the_purchase(StepDefinitions.java:105)
+	at ✽.user verifies the information of the purchase(file:///C:/Users/jpedroso/Desktop/Eclipse/testing-framework/src/test/resources/features/scenario.feature:24)
+</error>
+    <system-out>
+@happy-path @scenario-01
+Scenario: Selects two type of laptops, adds to cart, deletes one, finishes purchase &amp;#27;[90m# src/test/resources/features/scenario.feature:5&amp;#27;[0m
+2021-08-09 22:43:38 INFO Test Context Constructor
+2021-08-09 22:43:38 INFO WebDriverFactory constrcutor
+2021-08-09 22:43:38 INFO Driver type chrome
+2021-08-09 22:43:38 INFO WebDriverFactory: getDriver()
+2021-08-09 22:43:38 INFO WebDriverFactory: createDriver()
+2021-08-09 22:43:40 INFO Using chromedriver 92.0.4515.107 (resolved driver for Chrome 92)
+2021-08-09 22:43:40 INFO Exporting webdriver.chrome.driver as C:\Users\jpedroso\.cache\selenium\chromedriver\win32\92.0.4515.107\chromedriver.exe
+2021-08-09 22:43:57 INFO StepDefinitions constructor
+2021-08-09 22:43:57 INFO Test context: getWebDriver()
+2021-08-09 22:43:57 INFO Test context: getPageObjectManager()
+2021-08-09 22:43:57 INFO Navigate to homepage
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mthe user acesses the homepage of the marketplace&amp;#27;[0m                            &amp;#27;[90m# steps.StepDefinitions.the_user_acesses_the_homepage_of_the_marketplace()&amp;#27;[0m
+2021-08-09 22:44:03 INFO Select a product category: laptops
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32muser selects a product category &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;laptops&quot;&amp;#27;[0m                                    &amp;#27;[90m# steps.StepDefinitions.user_selects_a_product_category(java.lang.String)&amp;#27;[0m
+2021-08-09 22:44:07 INFO Select a product: Sony vaio i5
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mselects the product &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Sony vaio i5&quot;&amp;#27;[0m                                            &amp;#27;[90m# steps.StepDefinitions.selects_the_product(java.lang.String)&amp;#27;[0m
+2021-08-09 22:44:11 INFO Test context: getPageObjectManager()
+2021-08-09 22:44:11 INFO Add product to cart
+2021-08-09 22:44:12 INFO Exit confirmation pop-up
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32madds the product to cart, accepts the pop-up confirmation&amp;#27;[0m                    &amp;#27;[90m# steps.StepDefinitions.adds_the_product_to_cart_accepts_the_pop_up_confirmation()&amp;#27;[0m
+2021-08-09 22:44:13 INFO Navigate to homepage
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser goes back to the main page of the marketplace&amp;#27;[0m                            &amp;#27;[90m# steps.StepDefinitions.user_goes_back_to_the_main_page_of_the_marketplace()&amp;#27;[0m
+2021-08-09 22:44:14 INFO Select a product category: laptops
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32muser selects a product category &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;laptops&quot;&amp;#27;[0m                                    &amp;#27;[90m# steps.StepDefinitions.user_selects_a_product_category(java.lang.String)&amp;#27;[0m
+2021-08-09 22:44:16 INFO Select a product: Dell i7 8gb
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mselects the product &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Dell i7 8gb&quot;&amp;#27;[0m                                             &amp;#27;[90m# steps.StepDefinitions.selects_the_product(java.lang.String)&amp;#27;[0m
+2021-08-09 22:44:20 INFO Test context: getPageObjectManager()
+2021-08-09 22:44:20 INFO Add product to cart
+2021-08-09 22:44:21 INFO Exit confirmation pop-up
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32madds the product to cart, accepts the pop-up confirmation&amp;#27;[0m                    &amp;#27;[90m# steps.StepDefinitions.adds_the_product_to_cart_accepts_the_pop_up_confirmation()&amp;#27;[0m
+2021-08-09 22:44:22 INFO Test context: getPageObjectManager()
+2021-08-09 22:44:22 INFO Navigate to Cart Page
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32muser navigates to the cart page&amp;#27;[0m                                              &amp;#27;[90m# steps.StepDefinitions.user_navigates_to_the_cart_page()&amp;#27;[0m
+2021-08-09 22:44:23 INFO Delete a product: Dell i7 8gb
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mdeletes a product &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Dell i7 8gb&quot;&amp;#27;[0m                                               &amp;#27;[90m# steps.StepDefinitions.deletes_a_product(java.lang.String)&amp;#27;[0m
+2021-08-09 22:44:36 INFO Verify the total amount of the pruchase
+2021-08-09 22:44:36 INFO Click on placing order
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mclicks on placing the order&amp;#27;[0m                                                   &amp;#27;[90m# steps.StepDefinitions.clicks_on_placing_the_order()&amp;#27;[0m
+2021-08-09 22:44:36 INFO Fill purchase form field name with value Joana
+2021-08-09 22:44:36 INFO Field name
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mfills the field &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;name&quot;&amp;#27;[0m&amp;#27;[32m with the value &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Joana&quot;&amp;#27;[0m                                 &amp;#27;[90m# steps.StepDefinitions.fills_the_field_with_the_value(java.lang.String,java.lang.String)&amp;#27;[0m
+2021-08-09 22:44:37 INFO Fill purchase form field country with value Portugal
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mfills the field &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;country&quot;&amp;#27;[0m&amp;#27;[32m with the value &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Portugal&quot;&amp;#27;[0m                           &amp;#27;[90m# steps.StepDefinitions.fills_the_field_with_the_value(java.lang.String,java.lang.String)&amp;#27;[0m
+2021-08-09 22:44:38 INFO Fill purchase form field city with value Lisbon
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mfills the field &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;city&quot;&amp;#27;[0m&amp;#27;[32m with the value &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Lisbon&quot;&amp;#27;[0m                                &amp;#27;[90m# steps.StepDefinitions.fills_the_field_with_the_value(java.lang.String,java.lang.String)&amp;#27;[0m
+2021-08-09 22:44:38 INFO Fill purchase form field credit card with value 444499191919
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mfills the field &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;credit card&quot;&amp;#27;[0m&amp;#27;[32m with the value &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;444499191919&quot;&amp;#27;[0m                   &amp;#27;[90m# steps.StepDefinitions.fills_the_field_with_the_value(java.lang.String,java.lang.String)&amp;#27;[0m
+2021-08-09 22:44:39 INFO Fill purchase form field month with value August
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mfills the field &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;month&quot;&amp;#27;[0m&amp;#27;[32m with the value &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;August&quot;&amp;#27;[0m                               &amp;#27;[90m# steps.StepDefinitions.fills_the_field_with_the_value(java.lang.String,java.lang.String)&amp;#27;[0m
+2021-08-09 22:44:39 INFO Fill purchase form field year with value 2021
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mfills the field &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;year&quot;&amp;#27;[0m&amp;#27;[32m with the value &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;2021&quot;&amp;#27;[0m                                  &amp;#27;[90m# steps.StepDefinitions.fills_the_field_with_the_value(java.lang.String,java.lang.String)&amp;#27;[0m
+2021-08-09 22:44:40 INFO Click to finish purchase
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser finishes the purchase&amp;#27;[0m                                                    &amp;#27;[90m# steps.StepDefinitions.user_finishes_the_purchase()&amp;#27;[0m
+2021-08-09 22:44:41 INFO Confirm purchase information
+2021-08-09 22:44:41 INFO Purchase info displayed to user: {date=9/7/2021, amount=790, name=Joana, id=6228953, credit card=444499191919}
+2021-08-09 22:44:41 INFO PURCHASE ID= 6228953
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31muser verifies the information of the purchase&amp;#27;[0m                                &amp;#27;[90m# steps.StepDefinitions.user_verifies_the_information_of_the_purchase()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at framework.Screenshot.getScreenshot(Screenshot.java:53)
+	at steps.StepDefinitions.user_verifies_the_information_of_the_purchase(StepDefinitions.java:105)
+	at âœ½.user verifies the information of the purchase(file:///C:/Users/jpedroso/Desktop/Eclipse/testing-framework/src/test/resources/features/scenario.feature:24)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36muser closes the confirmation box&amp;#27;[0m                                              &amp;#27;[90m# steps.StepDefinitions.user_closes_the_confirmation_box()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at framework.Screenshot.getScreenshot(Screenshot.java:53)
+	at steps.StepDefinitions.endOfTest(StepDefinitions.java:126)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 15541
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 09, 2021 10:43:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="Tests cases where user selects different kinds of products, adds to cart and purchases it" name="Selects two type of laptops, adds to cart, deletes one, finishes purchase" time="66.997">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at framework.Screenshot.getScreenshot(Screenshot.java:53)
+	at steps.StepDefinitions.endOfTest(StepDefinitions.java:126)
+</error>
+  </testcase>
 </testsuite>

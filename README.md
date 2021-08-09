@@ -18,3 +18,9 @@ TO RUN THE TESTS
 - The default browser is Google Chrome. If you want to run the tests in other browsers you can add to the command
    -Dbrowser=firefox -> runs on Firefox
    -Dbrowser=explorer -> runs of Internet Explorer
+
+
+REPORTING
+
+- Reports are generated to the folder "Reports". Click on the Spark.html
+file inside the folder of the report to get an html report of the test.

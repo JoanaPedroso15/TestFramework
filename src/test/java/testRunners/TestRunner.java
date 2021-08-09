@@ -1,25 +1,28 @@
 package testRunners;
 
-import java.io.File;
 
-import org.junit.AfterClass;
+import java.io.IOException;
+
 import org.junit.runner.RunWith;
 
+import com.aventstack.extentreports.ExtentReports;
 
+import framework.Screenshot;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features", glue = { "steps" }, 
-        plugin = {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"}, 
+@CucumberOptions(features = "src/test/resources/features", glue = { "steps" },
+		plugin = { "pretty", "json:target/json-report/cucumber.json",
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
 		publish = true)
-
 
 public class TestRunner {
 
-	@AfterClass
-	public static void writeExtentReport() {
-		//Reporter.loadXMLConfig(new File("src/test/resources/extend-config.xml"));
-	}
-
+	
+	
+	
 }

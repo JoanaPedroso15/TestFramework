@@ -1,4 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: testRunners.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 58.057 sec
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 85.646 sec <<< FAILURE!
+Selects two type of laptops, adds to cart, deletes one, finishes purchase(Tests cases where user selects different kinds of products, adds to cart and purchases it)  Time elapsed: 66.975 sec  <<< ERROR!
+java.lang.NullPointerException
+	at framework.Screenshot.getScreenshot(Screenshot.java:53)
+	at steps.StepDefinitions.user_verifies_the_information_of_the_purchase(StepDefinitions.java:105)
+	at ?.user verifies the information of the purchase(file:///C:/Users/jpedroso/Desktop/Eclipse/testing-framework/src/test/resources/features/scenario.feature:24)
+
+Selects two type of laptops, adds to cart, deletes one, finishes purchase(Tests cases where user selects different kinds of products, adds to cart and purchases it)  Time elapsed: 66.997 sec  <<< ERROR!
+java.lang.NullPointerException
+	at framework.Screenshot.getScreenshot(Screenshot.java:53)
+	at steps.StepDefinitions.endOfTest(StepDefinitions.java:126)
+
