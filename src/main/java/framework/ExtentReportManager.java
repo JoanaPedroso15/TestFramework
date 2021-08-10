@@ -16,7 +16,8 @@ public class ExtentReportManager {
 	
 	public static ExtentReports getInstance() {
 		if (extent == null)
-			extent = createInstance(); 
+		extent = createInstance(); 
+		// extent = new ExtentReports();
 		return extent;
 	}
 	

@@ -13,6 +13,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 
+import framework.ExtentReportManager;
 import framework.Screenshot;
 import framework.TestContext;
 import io.cucumber.java.After;
@@ -34,6 +35,7 @@ public class StepDefinitions {
 	private TestContext testContext;
 	ExtentReports extent;
 	ExtentTest logger;
+	Scenario scenario;
 
 	private Homepage homepage;
 	private ProductPage productPage;
@@ -43,7 +45,8 @@ public class StepDefinitions {
 		LOG.info("StepDefinitions constructor");
 		this.testContext = context;
 		this.driver = testContext.getWebDriverFactory().getDriver();
-		this.logger = testContext.getExtentReporter().startTest("Scenario01");
+		//extent = ExtentReportManager.getInstance();
+		//logger = extent.createTest("Scenario01");
 	}
 
 	@Given("the user acesses the homepage of the marketplace")
@@ -107,6 +110,7 @@ public class StepDefinitions {
 	public void user_verifies_the_information_of_the_purchase() {
 		this.cartPage.confirmPurchaseInformation();
 		String path = Screenshot.getScreenshot(driver, "Purchase info");
+		//logger.addScreenCaptureFromPath(path);
 	}
 
 	@When("user closes the confirmation box")
