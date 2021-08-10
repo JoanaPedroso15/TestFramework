@@ -5,6 +5,7 @@ public class FileReaderManager {
 	private static FileReaderManager fileReaderManager = new FileReaderManager();
 	private static ConfigurationFileReader fileReader;
 
+
 	private FileReaderManager() {
 	}
 
@@ -15,5 +16,6 @@ public class FileReaderManager {
 	 public ConfigurationFileReader getConfigReader() {
 		 return (fileReader == null) ? new ConfigurationFileReader() : fileReader;
 	 }
+	
 
 }

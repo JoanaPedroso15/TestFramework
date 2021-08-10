@@ -1,11 +1,14 @@
 framework\FileReaderManager.class
+framework\ReportLog.class
 framework\TestContext.class
+pageObjects\TestInputs.class
+pageObjects\ProductPage.class
 framework\ConfigurationFileReader.class
 framework\PageObjectsManager.class
 framework\Wait.class
 pageObjects\CartPage.class
 framework\Screenshot.class
-pageObjects\TestInputs.class
 pageObjects\Homepage.class
-pageObjects\ProductPage.class
+framework\ExtentReportManager.class
 framework\WebDriverFactory.class
+framework\ExtentTestManager.class

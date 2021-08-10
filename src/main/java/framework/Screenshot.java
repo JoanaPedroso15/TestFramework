@@ -17,67 +17,43 @@ import org.openqa.selenium.WebDriverException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-
 
 public class Screenshot {
 
 	private static final Logger LOG = LoggerFactory.getLogger(Screenshot.class);
+	private static String fileSeparator = System.getProperty("file.separator");
+	public static String screenshotdir = System.getProperty("user.dir") + fileSeparator + "Reports" + fileSeparator
+			+ "Cucumber-Reports" + fileSeparator;
 
-	public static String screenshotdir = System.getProperty("user.dir") + "/Reports/Screenshots/";
-
-	public static void take(WebDriver driver, Scenario scenario) {
-		if (driver instanceof TakesScreenshot) {
-			TakesScreenshot screenshotableDriver = (TakesScreenshot) driver;
-			try {
-				File screenshot = screenshotableDriver.getScreenshotAs(OutputType.FILE);
-				byte[] fileContent = FileUtils.readFileToByteArray(screenshot);
-				scenario.attach(fileContent, "image/png", "screenshot");
 	
-			} catch (WebDriverException | IOException e) {
-				LOG.info(e.getMessage());
-			}
-		} else {
-			LOG.warn("This web driver implementation cannot create screenshots");
+	
+	public static String getScreenshot(WebDriver driver, String screenshotName) {
+		String dateName = new SimpleDateFormat("ddMMyyy_hhmmss").format(new Date());
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		//LOG.info("Screenshot directory " + screenshotdir);
+		String destination = screenshotdir + screenshotName + dateName + ".png";
+		File finalDestination = new File(destination);
+		try {
+			FileUtils.copyFile(source, finalDestination);
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
+		return destination;
 	}
 
-	
-	public static String getScreenshot(WebDriver driver) throws IOException 
-	{
-	    String Base64StringOfScreenshot="";
-	    TakesScreenshot screenshotableDriver = (TakesScreenshot) driver;
-	    
-	    //File src = screenshotableDriver.getScreenshotAs(OutputType.FILE);
-	    
-	    byte[] fileContent = screenshotableDriver.getScreenshotAs(OutputType.BYTES);
-			    
+	public static String getScreenshotBase64(WebDriver driver) {
+		String Base64StringOfScreenshot = "";
+		TakesScreenshot screenshotableDriver = (TakesScreenshot) driver;
+		byte[] fileContent = screenshotableDriver.getScreenshotAs(OutputType.BYTES);
+
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("ddMMYYYY_HHmmss");
 		String sDate = sdf.format(date);
-
-		//FileUtils.copyFile(, new File(screenshotdir + "image_" + sDate + ".png"));
-			    
-		//byte[] fileContent = FileUtils.readFileToByteArray(src);
 		Base64StringOfScreenshot = "data:image/png;base64," + Base64.getEncoder().encodeToString(fileContent);
 		return Base64StringOfScreenshot;
 	}
-	
-//	public static void take(WebDriver driver, Scenario scenario) {
-//
-//		String screenshotName = scenario.getName().replaceAll(" ", "_");
-//		try {
-//			TakesScreenshot screenshotableDriver = (TakesScreenshot) driver;
-//			 sourcePath = screenshotableDriver.getScreenshotAs(OutputType.FILE);
-//			Path destinationPath = new Path(
-//					System.getProperty("user.dir") + "/target/cucumber-reports/screenshots/" + screenshotName + ".png");
-//
-//			Files.copy(sourcePath, destinationPath, StandardCopyOption.REPLACE_EXISTING);
-//			Reporter.addScreenCaptureFromPath(destinationPath.toString());
-//		} catch (IOException e) {
-//			LOG.info(e.getMessage());
-//		}
-//
-//	}
 
 }

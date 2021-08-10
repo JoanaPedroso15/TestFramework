@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import framework.FileReaderManager;
+import framework.Wait;
 
 public class Homepage {
 	
@@ -67,7 +68,8 @@ public class Homepage {
 		LOG.info("Select a product: " + productName);
 		String expression = "//a[contains(text(), '" + productName + "')]";
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(expression)));
-		driver.findElement(By.xpath(expression)).click();
+		Wait.retryStaleElements(By.xpath(expression), driver, 3);
+		//driver.findElement(By.xpath(expression)).click();
 	}
 
 

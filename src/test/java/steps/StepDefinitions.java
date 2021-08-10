@@ -1,13 +1,17 @@
 package steps;
 
+import java.io.File;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
 
 import framework.Screenshot;
 import framework.TestContext;
@@ -28,7 +32,6 @@ public class StepDefinitions {
 
 	private WebDriver driver;
 	private TestContext testContext;
-	private Scenario scenario;
 	ExtentReports extent;
 	ExtentTest logger;
 
@@ -39,11 +42,12 @@ public class StepDefinitions {
 	public StepDefinitions(TestContext context) {
 		LOG.info("StepDefinitions constructor");
 		this.testContext = context;
+		this.driver = testContext.getWebDriverFactory().getDriver();
+		this.logger = testContext.getExtentReporter().startTest("Scenario01");
 	}
 
 	@Given("the user acesses the homepage of the marketplace")
 	public void the_user_acesses_the_homepage_of_the_marketplace() {
-		testContext.getWebDriverFactory();
 		this.homepage = testContext.getPageObjectManager().getHomePage();
 		this.homepage.navigateToHomePage();
 
@@ -100,11 +104,9 @@ public class StepDefinitions {
 	}
 
 	@When("user verifies the information of the purchase")
-	public void user_verifies_the_information_of_the_purchase() throws IOException {
+	public void user_verifies_the_information_of_the_purchase() {
 		this.cartPage.confirmPurchaseInformation();
-		String base64String = Screenshot.getScreenshot(driver);
-		logger.addScreenCaptureFromBase64String("base64String");
-
+		String path = Screenshot.getScreenshot(driver, "Purchase info");
 	}
 
 	@When("user closes the confirmation box")
@@ -113,56 +115,20 @@ public class StepDefinitions {
 	}
 
 	@Before()
-	public void bf0(Scenario scenario) throws InterruptedException, IOException {
-		ExtentReports extent = new ExtentReports();
-		ExtentTest test = extent.createTest("Scenario 01");
-	}
+	public void beforeScenario() throws IOException  {	
 
+		if ((new File(Screenshot.screenshotdir)).exists())
+			FileUtils.cleanDirectory(new File(Screenshot.screenshotdir));
+	}
+	
+	
 	@After
 	public void endOfTest(Scenario scenario) {
 		if (scenario.isFailed()) {
-			
-			try {
-				String base64String = Screenshot.getScreenshot(driver);
-			} catch (IOException e) {
-				
-				e.printStackTrace();
-			}
-			logger.addScreenCaptureFromBase64String("base64String");
-		
+			Screenshot.getScreenshot(driver, "Failed scenario");
 		}
-		extent.flush();
+		testContext.getExtentReporter().endTest();
 		testContext.getWebDriverFactory().closeDriver();
 	}
-
-	/*
-	 * 
-	 * @AfterMethod public void getResult(ITestResult result) throws IOException{
-	 * if(result.getStatus() == ITestResult.FAILURE){ logger.log(LogStatus.FAIL,
-	 * "Test Case Failed is "+result.getName()); logger.log(LogStatus.FAIL,
-	 * "Test Case Failed is "+result.getThrowable()); //To capture screenshot path
-	 * and store the path of the screenshot in the string "screenshotPath" //We do
-	 * pass the path captured by this mehtod in to the extent reports using
-	 * "logger.addScreenCapture" method. String screenshotPath =
-	 * ExtentReportsClass.getScreenshot(driver, result.getName()); //To add it in
-	 * the extent report logger.log(LogStatus.FAIL,
-	 * logger.addScreenCapture(screenshotPath)); }else if(result.getStatus() ==
-	 * ITestResult.SKIP){ logger.log(LogStatus.SKIP,
-	 * "Test Case Skipped is "+result.getName()); } // ending test //endTest(logger)
-	 * : It ends the current test and prepares to create HTML report
-	 * extent.endTest(logger); }
-	 * 
-	 * @AfterTest public void endReport(){ // writing everything to document
-	 * //flush() - to write or update test information to your report.
-	 * extent.flush(); //Call close() at the very end of your session to clear all
-	 * resources. //If any of your test ended abruptly causing any side-affects (not
-	 * all logs sent to ExtentReports, information missing), this method will ensure
-	 * that the test is still appended to the report with a warning message. //You
-	 * should call close() only once, at the very end (in @AfterSuite for example)
-	 * as it closes the underlying stream. //Once this method is called, calling any
-	 * Extent method will throw an error. //close() - To close all the operation
-	 * extent.close(); } }
-	 * 
-	 */
 
 }

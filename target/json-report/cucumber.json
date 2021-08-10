@@ -3,15 +3,15 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-08-09T21:43:37.611Z",
+        "start_timestamp": "2021-08-10T11:25:45.049Z",
         "before": [
           {
             "result": {
-              "duration": 19206981700,
+              "duration": 5294754200,
               "status": "passed"
             },
             "match": {
-              "location": "steps.StepDefinitions.bf0(io.cucumber.java.Scenario)"
+              "location": "steps.StepDefinitions.beforeScenario()"
             }
           }
         ],
@@ -22,9 +22,8 @@
         "after": [
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\r\n\tat framework.Screenshot.getScreenshot(Screenshot.java:53)\r\n\tat steps.StepDefinitions.endOfTest(StepDefinitions.java:126)\r\n",
-              "duration": 14990900,
-              "status": "failed"
+              "duration": 1651265700,
+              "status": "passed"
             },
             "match": {
               "location": "steps.StepDefinitions.endOfTest(io.cucumber.java.Scenario)"
@@ -36,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6189462300,
+              "duration": 31424539600,
               "status": "passed"
             },
             "line": 6,
@@ -48,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 4240573200,
+              "duration": 401010900,
               "status": "passed"
             },
             "line": 7,
@@ -66,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 3331095800,
+              "duration": 1075378000,
               "status": "passed"
             },
             "line": 8,
@@ -84,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 2499911600,
+              "duration": 1634043100,
               "status": "passed"
             },
             "line": 9,
@@ -96,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 1271954100,
+              "duration": 263848400,
               "status": "passed"
             },
             "line": 10,
@@ -108,7 +107,7 @@
           },
           {
             "result": {
-              "duration": 1918902300,
+              "duration": 355798000,
               "status": "passed"
             },
             "line": 11,
@@ -126,7 +125,7 @@
           },
           {
             "result": {
-              "duration": 3681892400,
+              "duration": 689311600,
               "status": "passed"
             },
             "line": 12,
@@ -144,7 +143,7 @@
           },
           {
             "result": {
-              "duration": 1993551200,
+              "duration": 924859100,
               "status": "passed"
             },
             "line": 13,
@@ -156,7 +155,7 @@
           },
           {
             "result": {
-              "duration": 1046413600,
+              "duration": 487421600,
               "status": "passed"
             },
             "line": 14,
@@ -168,7 +167,7 @@
           },
           {
             "result": {
-              "duration": 12665709400,
+              "duration": 11348713800,
               "status": "passed"
             },
             "line": 15,
@@ -186,7 +185,7 @@
           },
           {
             "result": {
-              "duration": 720641200,
+              "duration": 169033800,
               "status": "passed"
             },
             "line": 16,
@@ -198,7 +197,7 @@
           },
           {
             "result": {
-              "duration": 787638900,
+              "duration": 260791200,
               "status": "passed"
             },
             "line": 17,
@@ -220,7 +219,7 @@
           },
           {
             "result": {
-              "duration": 493717800,
+              "duration": 135538100,
               "status": "passed"
             },
             "line": 18,
@@ -242,7 +241,7 @@
           },
           {
             "result": {
-              "duration": 547689300,
+              "duration": 123468000,
               "status": "passed"
             },
             "line": 19,
@@ -264,7 +263,7 @@
           },
           {
             "result": {
-              "duration": 534695500,
+              "duration": 139920100,
               "status": "passed"
             },
             "line": 20,
@@ -286,7 +285,7 @@
           },
           {
             "result": {
-              "duration": 536695300,
+              "duration": 145970700,
               "status": "passed"
             },
             "line": 21,
@@ -308,7 +307,7 @@
           },
           {
             "result": {
-              "duration": 420758300,
+              "duration": 137913200,
               "status": "passed"
             },
             "line": 22,
@@ -330,7 +329,7 @@
           },
           {
             "result": {
-              "duration": 1077383200,
+              "duration": 196924800,
               "status": "passed"
             },
             "line": 23,
@@ -342,9 +341,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\r\n\tat framework.Screenshot.getScreenshot(Screenshot.java:53)\r\n\tat steps.StepDefinitions.user_verifies_the_information_of_the_purchase(StepDefinitions.java:105)\r\n\tat ✽.user verifies the information of the purchase(file:///C:/Users/jpedroso/Desktop/Eclipse/testing-framework/src/test/resources/features/scenario.feature:24)\r\n",
-              "duration": 261850400,
-              "status": "failed"
+              "duration": 290982000,
+              "status": "passed"
             },
             "line": 24,
             "name": "user verifies the information of the purchase",
@@ -355,8 +353,8 @@
           },
           {
             "result": {
-              "duration": 13991500,
-              "status": "skipped"
+              "duration": 101473600,
+              "status": "passed"
             },
             "line": 25,
             "name": "user closes the confirmation box",
